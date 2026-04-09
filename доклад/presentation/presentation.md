@@ -1,13 +1,23 @@
 ---
-## Front matter
 lang: ru-RU
-title: Дискреционные модели доступа. Списки управления доступом.
-subtitle: Презентация
+title: |
+  Дискреционные модели доступа. Списки  
+  управления доступом.
+subtitle: ""
 author:
-  - Глушенок А. А.
+  - Глушенок Анна Александровна, НПИбд-01-24
 institute:
-  - Российский университет дружбы народов, Москва, Россия
-date: 8 апреля 2026
+  - Российский университет дружбы народов им. Патриса Лумумбы
+date: |
+  \large \textbf{Преподаватель:} Кулябов Дмитрий Сергеевич  
+  \small
+  \textbf{занимаемая должность:} Профессор кафедры прикладной информатики и теории вероятностей РУДН; Заведующий сектором Управления информационно-технологического обеспечения, слаботочных и телекоммуникационных систем РУДН (по совместительству)  
+  \textbf{Ученая степень:} Доктор физико-математических наук по специальности 05.13.18 «Математическое моделирование, численные методы и комплексы программ» (13.10.2017)  
+  \textbf{Ученое звание:} Доцент по кафедре систем телекоммуникаций (18.05.2005)
+  
+  \vspace{0cm}
+  
+  Москва, 2026
 
 ## Formatting pdf
 toc: false
@@ -20,6 +30,26 @@ header-includes:
  - \usepackage{graphicx}
  - \usepackage{caption}
  - \captionsetup{labelformat=empty, labelsep=none}
+ - \makeatletter
+ - \setbeamertemplate{title page}{
+     \vbox{}
+     \vfill
+     \begingroup
+       \centering
+       {\usebeamerfont{institute}\usebeamercolor[fg]{institute}\insertinstitute\par}
+       \vskip0cm
+       {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
+       \vskip-0.35cm
+       {\color{orange}\rule{0.8\linewidth}{0.4pt}\par}
+       \vskip0cm
+       {\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor\par}
+       \vskip0cm
+       {\usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate\par}
+     \endgroup
+     \vfill
+   }
+ - \setbeamertemplate{frametitle continuation}{}
+ - \makeatother
  
 ## Fonts
 mainfont: Liberation Serif
@@ -27,43 +57,10 @@ sansfont: PT Sans
 monofont: Liberation Mono
 ---
 
-\begin{titlepage}
-\centering
-\vspace*{1cm}
-
-{\large \textbf{Российский Университет Дружбы Народов им. Патриса Лумумбы}}
-
-\vspace{3cm}
-
-{\Large \textbf{Доклад на тему:}} \\
-{\huge \textbf{Дискреционные модели доступа.}} \\
-{\huge \textbf{Списки управления доступом}}
-
-\vspace{2cm}
-
-{\large \textbf{Автор:}} \\
-Глушенок Анна Александровна, НПИбд-01-24
-
-\vspace{1cm}
-
-{\large \textbf{Преподаватель:}} \\
-Кулябов Дмитрий Сергеевич \\[0.3cm]
-\small
-\textbf{занимаемая должность:} Профессор кафедры прикладной информатики и теории вероятностей РУДН; Заведующий сектором Управления информационно-технологического обеспечения, слаботочных и телекоммуникационных систем РУДН (по совместительству). \\[0.3cm]
-\textbf{Ученая степень:} Доктор физико-математических наук по специальности 05.13.18 «Математическое моделирование, численные методы и комплексы программ» (13 октября 2017 г.). \\[0.3cm]
-\textbf{Ученое звание:} Доцент по кафедре систем телекоммуникаций (18 мая 2005 г.).
-
-\vspace{2cm}
-
-Москва, 2026
-
-\thispagestyle{empty}
-\end{titlepage}
-
 ## Докладчик
 
 :::::::::::::: {.columns align=center}
-::: {.column width="70%"}
+::: {.column width="80%"}
 
   * Глушенок Анна Александровна
   * Студент НПИбд-01-24
@@ -73,7 +70,7 @@ monofont: Liberation Mono
   * <https://github.com/aaglushenok>
 
 :::
-::: {.column width="30%"}
+::: {.column width="20%"}
 
 :::
 ::::::::::::::
